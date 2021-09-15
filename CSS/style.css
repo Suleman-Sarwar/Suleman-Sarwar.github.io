@@ -29,7 +29,7 @@ body {
   transition: 0.6s;
   flex-direction: column;
   border-radius: 9px;
-  box-shadow: 0 0 10px 0 rgba(250, 250, 250, 249);
+  box-shadow: 0 0 8px 0 rgba(250, 250, 250, 249);
 
 }
 
@@ -120,7 +120,7 @@ body {
 .blog {
   position: absolute;
   top: -190px;
-  right: -94%;
+  right: -92.5%;
   flex-shrink: 0;
   width: 100%;
   transition: 0.3s;
