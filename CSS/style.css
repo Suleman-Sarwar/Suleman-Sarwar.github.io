@@ -17,7 +17,7 @@ body {
 }
 
 .card {
-  width: 740px;
+  width: 700px;
   margin: auto;
   overflow-y: auto;
   position: relative;
@@ -64,7 +64,7 @@ body {
 
 .card[data-state="#about"] {
   height: 470px;
-  width: 800px;
+  width: 700px;
 
 }
 .card[data-state="#about"] .card-main {
