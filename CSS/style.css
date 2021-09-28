@@ -6,8 +6,7 @@
 body {
   color: #2b2c48;
   font-family: "Jost", sans-serif;
-  background-image: url(https://www.insanemarketers.com/wp-content/uploads/2017/04/blurred-background-1.jpg);
-  background-repeat: no-repeat;
+  background-image: url(https://mobilesolutions.pt/wp-content/uploads/2016/02/Silver-Blur-Background-Wallpaper.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -29,7 +28,7 @@ body {
   transition: 0.6s;
   flex-direction: column;
   border-radius: 9px;
-  box-shadow: 0 0 8px 0 rgba(250, 250, 250, 249);
+  box-shadow: 0px 1px 0px 0 rgba(250, 250, 250, 249);
 
 }
 
@@ -54,7 +53,7 @@ body {
   transition: all ease 0.5s;
 }
 .icon-box:hover {
-  box-shadow: inset 0 50px 0 0 #000;
+  box-shadow: inset 0 500px 0 0 #000;
   color: #fff;
 }
 
@@ -64,18 +63,20 @@ body {
 
 
 .card[data-state="#about"] {
-  height: 450px;
+  height: 470px;
+  width: 800px;
+
 }
 .card[data-state="#about"] .card-main {
   padding-top: 0;
 }
 
 .card[data-state="#contact"] {
-  height: 400px;
+  height: 380px;
 }
 
 .card[data-state="#experience"] {
-  height: 400px;
+  height: 410px;
 }
 
 .card.is-active .card-header {
@@ -98,14 +99,14 @@ body {
   transform: none;
 }
 .card.is-active .card-fullname {
-  bottom: 18px;
-  font-size: 20px;
-  letter-spacing: 1px;
+  bottom: 13px;
+  font-size: 26px;
+  letter-spacing: 1.2px;
 }
 .card.is-active .card-jobtitle {
-  bottom: 18px;
-  letter-spacing: 1.5px;
-  font-size: 10px;
+  bottom: 10px;
+  letter-spacing: 1.2px;
+  font-size: 11px;
 }
 
 .card-header {
@@ -120,11 +121,10 @@ body {
 .blog {
   position: absolute;
   top: -190px;
-  right: -92.5%;
+  right: -93%;
   flex-shrink: 0;
   width: 100%;
-  transition: 0.3s;
-  font-size: medium;
+  font-size: 17px;
 }
 
 .card-header * {
@@ -147,8 +147,8 @@ body {
 }
 
 .card-avatar {
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   -o-object-position: center;
@@ -156,31 +156,33 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
-  bottom: 0;
+  bottom: -10%;
   left: 50%;
   transform: translateX(-50%) translateY(-64px);
 }
 
 .card-fullname {
   position: absolute;
-  bottom: 0;
-  font-size: 22px;
-  font-weight: 700;
+  bottom: -10%;
+  font-size: 30px;
+  font-weight: 550;
   text-align: center;
   white-space: nowrap;
   transform: translateY(-10px) translateX(-50%);
   left: 50%;
+  letter-spacing: 0.2px;
+
 }
 
 .card-jobtitle {
   position: absolute;
-  bottom: 0;
-  font-size: 11.5px;
+  bottom: -12%;
+  font-size: 14px;
   white-space: nowrap;
-  font-weight: 500;
+  font-weight: 480;
   opacity: 1.5;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.3px;
   margin: 0;
   left: 50%;
   transform: translateX(-50%) translateY(-7px);
@@ -194,20 +196,24 @@ body {
   flex-direction: column;
 }
 
+
 .card-subtitle {
-  font-weight: 700;
-  font-size: 15px;
-  margin-bottom: 8px;
+  bottom: 500px;
+  font-weight: 500;
+  font-size: 17.5px;
+  letter-spacing: 1.2px;
+  margin-bottom: 5px;
+  margin-top: auto;
 }
 
 .card-content {
-  padding: 25px;
+  padding: 30px;
 }
 
 .card-desc {
   line-height: 1.6;
   color: #636b6f;
-  font-size: 14.5px;
+  font-size: 16px;
   margin: 0;
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
@@ -216,20 +222,20 @@ body {
 .card-social {
   display: flex;
   align-items: center;
-  padding: 0 25px;
+  padding: 0 30px;
   margin-bottom: 30px;
   
 }
 .card-social svg {
   fill: #a5b5ce;
-  width: 16px;
+  width: 20px;
   display: block;
-  transition: 0.3s;
+  transition: 2s;
 }
 .card-social a {
   color: #8797a1;
-  height: 32px;
-  width: 32px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -240,7 +246,7 @@ body {
   margin-right: 10px;
 }
 .card-social a:hover svg {
-  fill: #637faa;
+  fill: #0066ff;
 }
 .card-social a:last-child {
   margin-right: 0;
@@ -248,7 +254,7 @@ body {
 
 .card-buttons {
   display: flex;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   margin-top: auto;
   position: sticky;
   bottom: 0;
@@ -261,21 +267,21 @@ body {
       -ms-user-select: none;
           user-select: none;
   background: 0;
-  font-size: 13.5px;
+  font-size: 14px;
   border: 0;
-  padding: 15px 5px;
+  padding: 13px 5px;
   cursor: pointer;
   color: #5c5c6d;
   transition: 0.3s;
   font-family: "Jost", sans-serif;
-  font-weight: 500;
+  font-weight: 550;
   outline: 0;
   border-bottom: 3px solid transparent;
 }
 .card-buttons button.is-active, .card-buttons button:hover {
   color: #2b2c48;
-  border-bottom: 3px solid #8a84ff;
-  background: linear-gradient(to bottom, rgba(127, 199, 231, 0) 0%, rgba(207, 204, 255, 0.2) 44%, rgba(211, 226, 255, 0.4) 100%);
+  border-bottom: 3px solid rgb(138, 165, 182);
+  background: linear-gradient(to bottom, rgba(120, 195, 218, 0.014) 0%, rgba(207, 204, 255, 0.2) 44%, rgba(211, 226, 255, 0.4) 100%);
 }
 
 .card-section {
@@ -283,8 +289,8 @@ body {
 }
 .card-section.is-active {
   display: block;
-  -webkit-animation: fadeIn 0.6s both;
-          animation: fadeIn 0.6s both;
+  -webkit-animation: fadeIn 0.9s both;
+          animation: fadeIn 0.9s both;
 }
 
 @-webkit-keyframes fadeIn {
@@ -311,20 +317,19 @@ body {
   position: relative;
 }
 .card-timeline:after {
-  background: linear-gradient(to top, rgba(134, 214, 243, 0) 0%, #516acc 90%);
+  background: linear-gradient(to top, rgba(55, 146, 179, 0) 0%, #516acc 90%);
   content: "";
-  left: 42px;
-  width: 2px;
+  left: 40.5px;
+  width: 1.5px;
   top: 0;
-  height: 105%;
+  height: 102%;
   position: absolute;
-  content: "";
 }
 
 .card-item {
   position: relative;
   padding-left: 65px;
-  padding-right: 25px;
+  padding-right: 20px;
   padding-bottom: 20px;
   z-index: 1;
 }
@@ -341,7 +346,7 @@ body {
   height: 9px;
   line-height: .6;
   border: 2px solid #fff;
-  font-size: 11px;
+  font-size: 12.5px;
   text-indent: -35px;
   border-radius: 50%;
   color: rgba(134, 134, 134, 0.7);
@@ -350,12 +355,12 @@ body {
 
 .card-item-title {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 5px;
 }
 
 .card-item-desc {
-  font-size: 13px;
+  font-size: 14px;
   color: #6f6f7b;
   line-height: 1.5;
   font-family: "DM Sans", sans-serif;
@@ -369,7 +374,7 @@ body {
   max-width: 7400px;
   display: flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 14px;
   color: #6f6f7b;
   font-family: "DM Sans", sans-serif;
   line-height: 1.6;
