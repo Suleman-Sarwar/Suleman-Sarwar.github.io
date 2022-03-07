@@ -1,3 +1,3 @@
 # Suleman-Sarwar.github.io
 
-Website Profile hosted on https://sulemansarwar.co.uk
+Website profile card hosted on https://sulemansarwar.co.uk

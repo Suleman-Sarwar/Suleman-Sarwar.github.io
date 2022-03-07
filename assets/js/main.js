@@ -1,32 +1,36 @@
 
-(function TypeEffect() {
-  const select = (el, type  = false) => {
+(function() {
+  "use strict";
+
+  const select = (el, all = false) => {
     el = el.trim()
-    if (type) {
-      return [...document.querySelector(el)]
+    if (all) {
+      return [...document.querySelectorAll(el)]
     } else {
       return document.querySelector(el)
     }
   }
 
+  const typed = select('.typed')
+  if (typed) {
+    let typed_strings = typed.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    });
+  }
 
-
-  /**
-   * Hero type effect
-   */
-   const typed = select('.typed')
-   if (typed) {
-     let typed_strings = typed.getAttribute('data-typed-items')
-     typed_strings = typed_strings.split(',')
-     new Typed('.typed', {
-       strings: typed_strings,
-       loop: true,
-       typeSpeed: 90,
-       backSpeed: 60,
-       backDelay: 500
-     });
-   };
-
-
+  window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    })
+  });
 
 })()
